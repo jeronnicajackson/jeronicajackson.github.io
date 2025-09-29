@@ -56,6 +56,7 @@
 
         // moves the Box to a new position on the screen along the X-Axis
         function moveBoxTo(newPositionX) {
+          
           box.css("left", newPositionX);
         }
 
@@ -70,7 +71,7 @@
 
         // TODO 2 - Variable declarations
 
-
+        var position = 0;
 
 
 
@@ -81,9 +82,10 @@
          */
         function update() {
 
+        moveBoxTo(400); // Moves box to x-position 200
+        moveBoxTo(400); // Moves box to right edge
+        positionX =+10; // Adds 10 to positionX
         
-
-          
         }
 
         /**
@@ -94,8 +96,9 @@
          * - move the box to the left side of the screen.
          */
         function handleBoxClick() {
-
-
+        positionX =0;
+        changeBoxText(0)
+       
 
 
         }
